@@ -12,26 +12,31 @@ session_start();
 
 <html>
     <head>
-        <title>Hello, <?php print $_SESSION['name']."!"; ?></title>
+        <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
     </head>
     <body>
-        <div class='jumbotron' ><h2 style="position:relative;left:100px">Hello, <?php print $_SESSION['name']."!"; ?></h2></div>
-        <div style="position:absolute; height: 80%; width:20%; background:#265a88; top:20%;opacity: 0.7;">
+        <div class='jumbotron' ><h1 style="position:relative;left:100px">Hello, <?php print $_SESSION['name']."!"; ?></h1></div>
+        <div style="position:absolute; height: 80%; width:20%; background:#265a88; top:20%;opacity: 0.4;">
             <br><br>
-            <a href="showProject.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">Show Project</button>
+            <a href="showProject.php" target="iframe_content" style="color:white; font-size:30px; padding-left: 40px">Show Project</button>
             <br><br>
-            <a href="createProject.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">Create Project</button>
+            <a href="createProject.php" target="iframe_content" style="color:white; font-size:30px; padding-left: 40px">Create Project</button>
             <br><br>
-            <a href="addLeaders.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">Add Leaders</button>
+            <a href="createTasks.php" target="iframe_content" style="color:white; font-size:30px; padding-left: 40px">Create Tasks</button>
             <br><br>
-            <a href="createTasks.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">Create Tasks</button>
+            <a href="showTasks.php" target="iframe_content" style="color:white; font-size:30px; padding-left: 40px">Show Tasks</button>
             <br><br>
-            <a href="assignTasks.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">Assign Tasks</button>
+            <a href="myDashboard.php" target="iframe_content" style="color:white; font-size:30px; padding-left: 40px">My Dashboard</button>
+            <br><br>
+            <a href="developers.php" target="iframe_content" style="color:white; font-size:30px; padding-left: 40px">Developers</button>
+            <br><br>
+            <a href="logout.php" target="iframe_content" style="color:white; font-size:30px; padding-left: 40px">Logout</button>
+            
             
         </div>
-        <iframe border="0" src="createProject.php" name="iframe_content" style="position:absolute; top:20%; left:20%; height:80%;width:80%">
+        <iframe src="createProject.php" name="iframe_content" style="position:absolute; top:20%; left:20%; height:80%;width:80%">
     </body>
 </html>
