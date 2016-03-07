@@ -17,7 +17,7 @@ if(!$conn){
 $sql1 = "update employee set active = 0 where active = 1";
 
 mysqli_query($conn,$sql1);
-echo '  <html> <body> alert("Logging out session?") </body><html>';
+
 
 header('Location: index.html');
 mysqli_close($conn);
