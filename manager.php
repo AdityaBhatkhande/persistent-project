@@ -12,7 +12,7 @@ session_start();
 
 <html>
     <head>
-        <title><?php print $_SESSION['name']."!"; ?></title>
+        <title>Hello, <?php print $_SESSION['name']."!"; ?></title>
         <script type="text/javascript">
             function confirmLogout(){
                 var a = alert("Are you sure want to logout? ");
@@ -36,7 +36,7 @@ session_start();
             <br><br>
             <a href="createTasks.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">Create Tasks</button>
             <br><br>
-            <a href="showTasks.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">Show Tasks</button>
+            <a href="testShowTasks.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">Show Tasks</button>
             <br><br>
             <a href="myDashboard.php" target="iframe_content" style="color:white; font-size:25px; padding-left: 40px">My Dashboard</button>
             <br><br>

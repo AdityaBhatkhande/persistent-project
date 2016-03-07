@@ -31,8 +31,8 @@ if ($result) {
     // output data of each row
     $i = 0;
     while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-        $i = $i+ 30;
-        echo '<div style="color:white ; position :relative; height:250px; width:300px; margin-left:'.$i.';  ;float:left; background: url(images/notes.jpg); "> <table border=0><tr><td>Project Name</td><td>:</td><td> '.$row['projectName'].'</td></tr><tr><td> Date of start</td><td>:</td><td> '.$row['dos'].'</td></tr><tr><td> Date of Completion</td><td>:</td><td> '.$row['doc'].'</td></tr><tr><td> Status</td><td>:</td><td> '.$row['status'].'</td></tr></table></div>';
+        $i = $i+ 50;
+        echo '<div style="color:white ; position :relative; height:250px; width:300px; margin-left:'.$i.'; margin-top: 20px ;float:left; background: url(images/notes.jpg); "> <table border=0><tr><td>Project Name</td><td>:</td><td> '.$row['projectName'].'</td></tr><tr><td> Date of start</td><td>:</td><td> '.$row['dos'].'</td></tr><tr><td> Date of Completion</td><td>:</td><td> '.$row['doc'].'</td></tr><tr><td> Status</td><td>:</td><td> '.$row['status'].'</td></tr></table></div>';
         
     }
 } else {

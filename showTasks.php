@@ -35,7 +35,7 @@ if ($result) {
         echo '<div style="color:#aee ; '
         . 'position :relative margin-left:$i; height: 400px ;'
                 . 'width:300px ;float:left; content:url(images/notes.jpg) "><a href="deleteTasks.php">Delete</a> '
-                . 'Task Id'.$row['taskId'].'<br>Task Name'.$row['taskName'].'<br>Task Description'.$row['taskDesc'].'<br>Project Id: '.$row['projectId'].'<br>Project Manager: '.$row['projectManager'].'<br> Date of start: '.$row['dos'].'<br> Date of Completion: '.$row['doc'].'<br> Status: '.$row['Status'].'<br>Developer Name: '.$row['developerName'].'</div>';
+                . 'Task Id'.$row['taskId'].'<br>Task Name'.$row['taskName'].'<br>Task Description'.$row['taskDesc'].'<br>Project Id: '.$row['projectId'].'<br>Project Manager: '.$row['projectManager'].'<br> Date of start: '.$row['dos'].'<br> Date of Completion: '.$row['doc'].'<br> Status: '.$row['status'].'<br>Developer Name: '.$row['developerName'].'</div>';
         
     }
 } else {
